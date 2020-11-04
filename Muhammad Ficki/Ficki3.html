@@ -1,0 +1,53 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" href="fvxyz.css">
+	<style>
+		body {background-color:lightsalmon; font-family:verdana;}
+	</style>
+	<title>Blog Ficki</title>
+</head>
+<body>
+	<div class="navigasi" id="Nav">
+		<a onClick="alert('Menuju Beranda!')" href="Ficki.html">Beranda</a>
+		<a onClick="alert('Menuju Galeri!')" href="Ficki2.html">Galeri</a>
+		<a class="active" href="Ficki3.html">Tulisan</a>
+		<a onClick="alert('Menuju Kontak!')" href="Ficki4.html">Kontak</a>
+</div>
+<div>
+<h1>Tulisan</h1>
+<p>Contoh JavaScript</p>
+<div class="konten">
+  <h2>Eaaa 1</h2>
+  <script>
+function warna(pilihan)
+{alert("Nama warna yang kamu suka, sama dengan "+pilihan+ ", tapi kalau warna yang aku suka ya mewarnai hari-harimu. Eaaa")
+document.bgColor=pilihan}
+  </script> <h3>Pilih Warna Favorit Anda</h3>
+<FORM>
+<INPUT TYPE="button" VALUE="Biru" onClick="warna('lightblue')">
+<INPUT TYPE="button" VALUE="Pink" onClick="warna('pink')">
+<INPUT TYPE="button" VALUE="Jingga" onClick="warna('peachpuff')">
+</div>
+<div class="konten">
+	<h2>Eaaa 2</h2>
+<p>Berikut adalah contoh penggunaan continue</p>
+<script>
+var i=0;
+while(i<5){
+if(i==2)
+{i++;continue;}
+document.write(i+"<BR>");
+i++;}
+document.write("<HR>");
+</SCRIPT>
+<p>Bingung ya kenapa ga ada 2 nya? Iya, soalnya kamu ga ada duanya. Eaa</p>
+</div>
+
+</div>
+<script>
+
+</script>
+
+</body>
+</html>

@@ -1,0 +1,74 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" href="fvxyz.css">
+	<style>		
+body{background-color:lightsalmon; font-family:verdana;}
+	</style>
+	<title>Blog Ficki</title>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+</head>
+<body>
+	<div class="navigasi" id="Nav">
+		<a onClick="alert('Menuju Beranda!')" href="Ficki.html">Beranda</a>
+		<a onClick="alert('Menuju Galeri!')" href="Ficki2.html">Galeri</a>
+		<a onClick="alert('Menuju Tulisan!')" href="Ficki3.html">Tulisan</a>
+		<a class="active" href="Ficki4.html">Kontak</a>
+</div>
+
+<div>
+<h1>Kontak</h1>
+<p>Kalau lihat tulisan klik, tolong diklik ya</p>
+</div>
+<div>
+<p>Satu Klik!</p> 
+<p>Dua Klik!</p>
+<p>Hai cantik ayo klik!</p>
+<button>Lihat Salah Stau Keindahan Dunia!</button>
+<script>
+$(document).ready(function(){
+  $("p").click(function(){
+    $(this).hide();
+  });
+});
+</script>
+
+</div>
+<div class="toshow" style="display:none">
+<script>
+$(document).ready(function(){
+  $("button").click(function(){
+    $(".toshow").show();
+  });
+});
+</script>
+<video autoplay="true" id="video-webcam">
+        
+  </video>
+<script type="text/javascript">
+    var video = document.querySelector("#video-webcam");
+    navigator.getUserMedia = navigator.getUserMedia || navigator.webkitGetUserMedia || navigator.mozGetUserMedia || navigator.msGetUserMedia || navigator.oGetUserMedia;
+    if (navigator.getUserMedia) {  
+        navigator.getUserMedia({ video: true }, handleVideo, videoError);
+    }
+    function handleVideo(stream) {
+        video.srcObject = stream;
+    }
+    function videoError(e) {   
+        alert("Yah, sayang banget ngelewatin hal terindah didunia!")
+    }
+</script>
+</div>
+
+
+
+
+
+
+
+</body>
+
+
+
+</html>
